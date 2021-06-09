@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <filter id="Ellipse_53" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.31"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="SVGID" width="40.08" height="36.091" fill="#27b2ee"/>
+    </clipPath>
+  </defs>
+  <g id="Group_4451" data-name="Group 4451" transform="translate(-7815 7299)">
+    <g transform="matrix(1, 0, 0, 1, 7815, -7299)" filter="url(#Ellipse_53)">
+      <circle id="Ellipse_53-2" data-name="Ellipse 53" cx="34" cy="34" r="34" transform="translate(1 1)" fill="#fff"/>
+    </g>
+    <g id="Group_4425" data-name="Group 4425" transform="translate(7361.92 -7753.646)">
+      <g id="Group_3731" data-name="Group 3731" transform="translate(464 472)">
+        <g id="Group_3730" data-name="Group 3730" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <path id="Path_3598" data-name="Path 3598" d="M496.193,508.027a1.577,1.577,0,0,1-.888-.273l-10.055-6.82-5.393,3.881a1.582,1.582,0,0,1-2.455-.881l-2.708-10.263-9.676-3.7a1.583,1.583,0,0,1-.02-2.95l36.79-14.639a1.564,1.564,0,0,1,.522-.123,1.458,1.458,0,0,1,.192,0,1.575,1.575,0,0,1,1.014.449,1.084,1.084,0,0,1,.084.089,1.58,1.58,0,0,1,.385,1.179,1.517,1.517,0,0,1-.026.18l-6.21,32.584a1.582,1.582,0,0,1-1.555,1.286Zm-10.06-10.32,8.957,6.075,4.832-25.353-17.453,16.793,3.621,2.456.042.029Zm-7.456-1.351,1.2,4.545,2.585-1.86-3.383-2.3a1.543,1.543,0,0,1-.4-.389Zm-8.738-7.893,6.644,2.54a1.587,1.587,0,0,1,.966,1.075l.842,3.194a1.585,1.585,0,0,1,.477-.976l16.629-16Zm0,0" transform="translate(-464 -472.189)" fill="#27b2ee"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

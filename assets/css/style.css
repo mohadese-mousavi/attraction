@@ -1,0 +1,498 @@
+@font-face {
+    font-family: Vazir;
+    src: url(../fonts/Vazir-Thin-FD.eot);
+    src: url(../fonts/Vazir-Thin-FD.ttf) format('truetype');
+    src: url(../fonts/Vazir-Thin-FD.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url(../fonts/IranSans/eot/IRANSansWeb-FaNum.eot);
+    src: url(../fonts/IranSans/eot/IRANSansWeb-FaNum_Bold.eot);
+    src: url(../fonts/IranSans/eot/IRANSansWeb-FaNum_Light.eot);
+    src: url(../fonts/IranSans/eot/IRANSansWeb-FaNum_Medium.eot);
+    src: url(../fonts/IranSans/eot/IRANSansWeb-FaNum_UltraLight.eot);
+    src: url(../fonts/IranSans/ttf/IRANSansWeb-FaNum.ttf) format('truetype');
+    src: url(../fonts/IranSans/ttf/IRANSansWeb-FaNum_Bold.ttf) format('truetype');
+    src: url(../fonts/IranSans/ttf/IRANSansWeb-FaNum_Light.ttf) format('truetype');
+    src: url(../fonts/IranSans/ttf/IRANSansWeb-FaNum_Medium.ttf) format('truetype');
+    src: url(../fonts/IranSans/ttf/IRANSansWeb-FaNum_UltraLight.ttf) format('truetype');
+    src: url(../fonts/IranSans/woff/IRANSansWeb-FaNum.woff) format('woff');
+    src: url(../fonts/IranSans/woff/IRANSansWeb-FaNum_Bold.woff) format('woff');
+    src: url(../fonts/IranSans/woff/IRANSansWeb-FaNum_Light.woff) format('woff');
+    src: url(../fonts/IranSans/woff/IRANSansWeb-FaNum_Medium.woff) format('woff');
+    src: url(../fonts/IranSans/woff/IRANSansWeb-FaNum_UltraLight.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: IranSans, Vazir, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F6F6;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.title-dark {
+    color: #5d5d5d;
+}
+
+.my-truncate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    line-height: 1.2em;
+    height: 6em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.tab-bar {
+    background-color: #888888;
+    height: 3rem;
+}
+
+.tab-bar .tabs {
+    height: 100%;
+    background-color: white;
+    padding: 0 40px 0 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#img-box {
+    overflow: hidden;
+    position: relative;
+    padding: 5px 2px;
+}
+
+#img-mask {
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.my-hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(177, 177, 177);
+}
+
+.my-search-btn {
+    background-color: #00b4d7;
+    border-radius: 2px;
+    border: none;
+    padding: 0 40px;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    transition: 200ms;
+}
+
+.my-search-btn:hover {
+    box-shadow: 1px 1px 7px #c6c6c6;
+    background-color: #0099b8;
+    color: white;
+}
+
+.my-blue-btn {
+    background-color: #00b4d7;
+    border-radius: 20px;
+    border: none;
+    padding: 4px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    transition: 200ms;
+}
+
+.my-blue-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 7px #c6c6c6;
+    color: white;
+}
+
+.my-transparent-btn {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 2px 15px;
+    color: white;
+    transition: 200ms;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+    transform: scale(0.9);
+}
+
+.my-transparent-btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(1);
+    color: white;
+}
+
+.my-transparent-blue-btn {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #2649fd;
+    padding: 2px 15px;
+    color: #2649fd;
+    transition: 200ms;
+    font-size: small;
+    font-weight: bold;
+    transform: scale(0.9);
+}
+
+.my-transparent-blue-btn:hover {
+    transform: scale(1);
+    color: #2649fd;
+}
+
+.my-transparent-red-btn {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #f91b44;
+    padding: 2px 15px;
+    color: #f91b44;
+    transition: 200ms;
+    font-size: small;
+    font-weight: bold;
+    transform: scale(0.9);
+}
+
+.my-transparent-red-btn:hover {
+    transform: scale(1);
+    color: #f91b44;
+}
+
+.my-hashtag-btn {
+    background-color: #7e8387;
+    border-radius: 20px;
+    border: none;
+    padding: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    transition: 200ms;
+}
+
+.my-hashtag-btn:hover {
+    background-color: #6e6e6e;
+    color: white;
+}
+
+.my-webapp-btn {
+    background-color: #eeeeee;
+    border-radius: 20px;
+    border: none;
+    padding: 4px 15px;
+    color: #454545;
+    font-weight: bold;
+    font-size: small;
+    transition: 200ms;
+}
+
+.my-webapp-btn:hover {
+    background-color: #d1d1d1;
+}
+
+.my-badge {
+    background-color: #00b5d7;
+    color: white;
+    font-size: x-small;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 2px 6px 1px 6px;
+}
+
+.selection-box .form-select {
+    width: 12% !important;
+    margin-left: 0.5rem;
+}
+
+.card-body {
+    color: #6d6d6d;
+}
+
+.card-overlay-big {
+    height: 60px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card-overlay-small {
+    height: 60px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.map {
+    border: 1px solid gray;
+    overflow: hidden;
+    ;
+}
+
+.card-overlay-icon {
+    height: 55px;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+}
+
+.card-overlay {
+    height: 55px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid orange;
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.card-overlay.hide {
+    opacity: 0;
+}
+
+.arrowBtnOverlay {
+    width: 30px;
+    height: 30px;
+    background-color: #00b5d7;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -15px;
+    top: auto;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.my-footer {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    overflow: hidden;
+}
+
+.icon-small {
+    height: 24px;
+    width: 24px;
+    margin: 2px;
+}
+
+.icon-medium {
+    height: 32px;
+    width: 32px;
+    margin: 2px;
+}
+
+.icon-large {
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+}
+
+.bmj-card {
+    border: 1px solid #c9c9c9;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 5px #dcdcdc;
+}
+
+.bmj-card .bmj-card-title {
+    font-size: small;
+    color: rgb(91, 91, 91);
+}
+
+.bmj-card .bmj-card-bold-title {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(91, 91, 91);
+}
+
+.bmj-card .bmj-card-text {
+    font-size: small;
+    color: rgb(91, 91, 91);
+}
+
+
+/* .bmj-sidebar-cards .bmj-card {
+    border: 1px solid #c9c9c9;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 5px #dcdcdc;
+} */
+
+.bmj-card-overlay-detail {
+    display: inline-block;
+    width: 100%;
+}
+
+.bmj-card-overlay-detail i {
+    display: block;
+    width: 20%;
+    color: white;
+}
+
+.bmj-card-overlay-detail h6 {
+    font-size: xx-small;
+    text-align: center;
+}
+
+.bmj-card-overlay-detail h6 span {
+    font-size: small;
+    font-weight: bold;
+}
+
+.bmj-card-btm-bar .bmj-btm-bar-title {
+    font-size: small;
+    font-weight: bold;
+    color: rgb(93, 93, 93);
+}
+
+.bmj-card-btm-bar .bmj-btm-bar-description {
+    font-size: small;
+    font-weight: bold;
+    color: rgb(93, 93, 93);
+}
+
+.bmj-detail-card-text {
+    font-size: medium;
+    line-height: 2.6;
+}
+
+.bmj-card .bmj-contact-info span {
+    color: rgb(91, 91, 91);
+}
+
+.bmj-card .bmj-contact-info span i {
+    width: 24px;
+    height: 24px;
+    font-size: 1.3em;
+    color: rgb(164, 164, 164);
+}
+
+.bmj-card .bmj-inner-card {
+    height: 50vh;
+}
+
+.bmj-card .bmj-inner-card img {
+    height: 50vh;
+    object-fit: cover;
+}
+
+.bmj-slide-small .bmj-slide-title {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.bmj-slide-small .bmj-slide-text {
+    font-size: small;
+}
+
+
+/* .bmj-slide-small .bmj-img-container {
+    height: 27vh;
+}
+
+.bmj-slide-small .bmj-slide-img {
+    width: 100%;
+    height: 27vh;
+    object-fit: cover;
+} */
+
+#mapid {
+    height: 450px;
+}
+
+
+/* MY MQ */
+
+
+/* On screens that are 576px or LESS, set the background color to blue */
+
+@media screen and (max-width: 576px) {
+    .selection-box .form-select {
+        width: 25% !important;
+    }
+}
+
+
+/* On screens that are 577px or MORE, set the background color to blue */
+
+@media screen and (min-width: 577px) {
+    .selection-box .form-select {
+        width: 20% !important;
+    }
+}
+
+
+/* On screens that are 992px or MORE, set the background color to blue */
+
+@media screen and (min-width: 992px) {
+    .selection-box .form-select {
+        width: 10% !important;
+    }
+}
+
+
+/* END OF MQ */

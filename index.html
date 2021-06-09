@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+    <title>Attractions</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" /> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- MDB -->
+    <link rel="stylesheet" href="assets/css/mdb.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="rtl" dir="rtl">
+
+    <nav class="navbar navbar-expand-lg navbar-dark text-white" style="background-color: #14606D;">
+        <div class="container-fluid">
+            <button class="navbar-toggler " style="position: absolute; top: 20px; right: 20px;" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="nav-content" aria-expanded="false" aria-label="toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="d-lg-flex d-inline-flex flex-wrap justify-content-center flex-fill">
+
+                <a class="navbar-brand mx-0" href="#"><img src="assets/img/logo.png" alt="bamajoore-logo" style="height: 40px;"></a>
+
+                <div class="collapse navbar-collapse mx-0" id="navContent">
+                    <!-- Left links -->
+                    <ul class="navbar-nav  mb-2 mb-lg-0 mx-0 font-small font-weight-normal">
+                        <li class="nav-item mx-1 ">
+                            <a class="nav-link " aria-current="page" href="#">صفحه نخست</a>
+                        </li>
+
+                        <li class="nav-item mx-1">
+                            <a class="nav-link " href="#">همه اقامتگاه ها</a>
+                        </li>
+
+                        <li class="nav-item mx-1">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">سوال های متداول</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link " href="#">جاذبه ها</a>
+                        </li>
+
+                        <li class="nav-item mx-1">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">مراکز خدماتی</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="d-lg-none" style="position: absolute; top: 20px; left: 20px;">
+                <div class="">
+                    <span class="h6">
+                        پروفایل کاربری
+                        <i class="fas fa-user-alt mx-2 " style="color: white; "></i>
+                    </span>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex align-items-center px-0 mr-auto " id="my-nav-box ">
+                <i class="far fa-heart mx-2 " style="color: white; "></i>
+                <img class="mx-2 " src="assets/img/icon.PNG " alt="arrows " style="width: 35px; ">
+                <button class="border-0 rounded p-1 mx-1 " style="font-size: smaller; ">ثبت رایگان اقامتگاه <i class="fas fa-home " style="color: #02BBF1; "></i></button>
+                <div class="mx-2 ">
+                    <i class="fas fa-user-alt d-block mx-auto mb-1 mt-2 " style="width: 30%; color: white; "></i>
+                    <p class="text-white " style="font-size:x-small; ">پروفایل کاربری</p>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="tab-bar container-fluid mx-0 px-0 mb-4 ">
+
+        <div class="container-md h-100 px-0 px-md-4 ">
+            <a class="tabs ">ویژه ها</a>
+            <i class="fas fa-chevron-right py-1 px-2 " style="color: white; "></i>
+            <i class="fas fa-chevron-left py-1 px-2 " style="color: white; "></i>
+            <span class="font-weight-nor h5 h5-responsive text-white ">چالیدره نگینی در شاندیز</span>
+        </div>
+
+    </div>
+
+    <div class=" container ">
+
+        <div id="specials ">
+            <div class="row ">
+                <div class="col-lg-6 col-md-12 px-1 ">
+
+                    <div class="card text-white mb-2 ">
+                        <img src="assets/picture/slid1.jpg " class="card-img " alt="... " />
+
+                        <div class="card-img-overlay card-overlay-big px-3 pt-1 ">
+                            <div class=" float-end ">
+                                <p class="card-title font-weight-bold h4-responsive ">سینمای نگین تهران</p>
+                                <p class="card-text " style="font-size: small; ">تهران / بلوار ولی عصر</p>
+                            </div>
+                            <button class="btn my-transparent-btn float-start ">کلیک کنید</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="row ">
+
+                        <div class="col-lg-6 col-md-6 px-1 ">
+                            <div class="card text-white mb-2 ">
+                                <img src="assets/picture/slid3.jpg " class="card-img " alt="... " />
+                                <div class="card-img-overlay card-overlay-small px-3 pt-1 " style="height: 60px; position: absolute; top: auto; bottom: 0; background-color: rgba(0, 0, 0, 0.7); ">
+                                    <div class=" float-end ">
+                                        <p class="card-title font-weight-bold h6-responsive ">سینمای نگین تهران</p>
+                                        <p class="card-text " style="font-size: small; ">تهران / بلوار ولی عصر</p>
+                                    </div>
+                                    <button class="btn my-transparent-btn float-start ">کلیک کنید</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 px-1 ">
+                            <div class="card text-white mb-2 ">
+                                <img src="assets/picture/slid3.jpg " class="card-img " alt="... " />
+                                <div class="card-img-overlay card-overlay-small px-3 pt-1 " style="height: 60px; position: absolute; top: auto; bottom: 0; background-color: rgba(0, 0, 0, 0.7); ">
+                                    <div class=" float-end ">
+                                        <p class="card-title font-weight-bold h6-responsive ">سینمای نگین تهران</p>
+                                        <p class="card-text " style="font-size: small; ">تهران / بلوار ولی عصر</p>
+                                    </div>
+                                    <button class="btn my-transparent-btn float-start ">کلیک کنید</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 px-1 ">
+                            <div class="card text-white mb-2 ">
+                                <img src="assets/picture/slid4.jpg " class="card-img " alt="... " />
+                                <div class="card-img-overlay card-overlay-small px-3 pt-1 " style="height: 60px; position: absolute; top: auto; bottom: 0; background-color: rgba(0, 0, 0, 0.7); ">
+                                    <div class=" float-end ">
+                                        <p class="card-title font-weight-bold h6-responsive ">سینمای نگین تهران</p>
+                                        <p class="card-text " style="font-size: small; ">تهران / بلوار ولی عصر</p>
+                                    </div>
+                                    <button class="btn my-transparent-btn float-start ">کلیک کنید</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-6 col-md-6 px-1 ">
+                            <div class="card text-white mb-2 ">
+                                <img src="assets/picture/slid5.jpg " class="card-img " alt="... " />
+                                <div class="card-img-overlay card-overlay-small px-3 pt-1 " style="height: 60px; position: absolute; top: auto; bottom: 0; background-color: rgba(0, 0, 0, 0.7); ">
+                                    <div class=" float-end ">
+                                        <p class="card-title font-weight-bold h6-responsive ">سینمای نگین تهران</p>
+                                        <p class="card-text " style="font-size: small; ">تهران / بلوار ولی عصر</p>
+                                    </div>
+                                    <button class="btn my-transparent-btn float-start lg ">کلیک کنید</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- specials ended -->
+
+        <div id="main mb-5 ">
+
+            <div class=" selection-box d-flex flex-row my-4 ">
+
+                <select class="form-select form-select-sm " aria-label=".form-select-sm example ">
+                         <option selected>خراسان رضوی</option>
+                         <option value="1 ">تهران</option>
+                         <option value="2 ">اصفهان</option>
+                         <option value="3 ">...</option>
+                     </select>
+
+                <select class="form-select form-select-sm " aria-label=".form-select-sm example ">
+                         <option selected>مشهد</option>
+                         <option value="1 ">قوچان</option>
+                         <option value="2 ">کاشمر</option>
+                         <option value="3 ">...</option>
+                     </select>
+
+                <select class="form-select form-select-sm " aria-label=".form-select-sm example ">
+                         <option selected>موزه ها</option>
+                         <option value="1 ">باغ وحش</option>
+                         <option value="2 ">مراکز خرید</option>
+                         <option value="3 ">...</option>
+                    </select>
+                <button class="btn my-search-btn d-block d-md-inline-block ">جستجو</button>
+            </div>
+
+
+            <div class="my-hr "></div>
+
+
+            <div class="row ">
+
+                <div class="col-lg-9 ">
+
+                    <h6 class="title title-dark h6 h6-responsive my-4 ">جاذبه های گردشگری مشهد</h6>
+
+                    <div class="card mb-4 overflow-hidden rounded-0 ">
+                        <div class="row g-0 ">
+                            <div class="col-lg-5 ">
+                                <img class=" img-fluid card-img " src="assets/picture/slid1.jpg " alt="s1 ">
+                            </div>
+                            <div class="col-lg-7 ">
+
+                                <div class="d-flex flex-column h-100 ">
+                                    <div class="card-body flex-grow-1 mb-auto pt-4 px-4 ">
+                                        <h5 class="card-title font-weight-bold mt-1 mb-2 mt-md-2 mb-md-3 ">نام محل</h5>
+                                        <p class="card-text text-justify font-weight-normal ">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                        </p>
+
+                                    </div>
+
+                                    <div class="d-md-flex card-location-box px-4 pb-4 mt-auto ">
+                                        <span class=" d-block flex-md-fill my-2 "><i class="fas fa-map-marker-alt mr-2 " style="color: #f81a43; "></i>مشهد / انتهای بلوار خیام</span>
+                                        <button class="btn my-blue-btn d-block d-md-inline-block mx-auto my-2 ">کلیک کنید</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card mb-4 overflow-hidden rounded-0 ">
+                        <div class="row g-0 ">
+                            <div class="col-lg-5 ">
+                                <img class=" img-fluid card-img " src="assets/picture/slid6.jpg " alt="s1 ">
+                            </div>
+                            <div class="col-lg-7 ">
+
+                                <div class="d-flex flex-column h-100 ">
+                                    <div class="card-body flex-grow-1 mb-auto pt-4 px-4 ">
+                                        <h5 class="card-title font-weight-bold mt-1 mb-2 mt-md-2 mb-md-3 ">نام محل</h5>
+                                        <p class="card-text text-justify font-weight-normal ">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                        </p>
+
+                                    </div>
+
+                                    <div class="d-md-flex card-location-box px-4 pb-4 mt-auto ">
+                                        <span class=" d-block flex-md-fill my-2 "><i class="fas fa-map-marker-alt mr-2 " style="color: #f81a43; "></i>مشهد / انتهای بلوار خیام</span>
+                                        <button class="btn my-blue-btn d-block d-md-inline-block mx-auto my-2 ">کلیک کنید</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card mb-4 overflow-hidden rounded-0 ">
+                        <div class="row g-0 ">
+                            <div class="col-lg-5 ">
+                                <img class=" img-fluid card-img " src="assets/picture/slid5.jpg " alt="s1 ">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <div class="d-flex flex-column h-100 ">
+                                    <div class="card-body flex-grow-1 mb-auto pt-4 px-4 ">
+                                        <h5 class="card-title font-weight-bold mt-1 mb-2 mt-md-2 mb-md-3 ">نام محل</h5>
+                                        <p class="card-text text-justify font-weight-normal ">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                        </p>
+
+                                    </div>
+
+                                    <div class="d-md-flex card-location-box px-4 pb-4 mt-auto ">
+                                        <span class=" d-block flex-md-fill my-2 "><i class="fas fa-map-marker-alt mr-2 " style="color: #f81a43; "></i>مشهد / انتهای بلوار خیام</span>
+                                        <button class="btn my-blue-btn d-block d-md-inline-block mx-auto my-2 ">کلیک کنید</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card mb-4 overflow-hidden rounded-0 ">
+                        <div class="row g-0 ">
+                            <div class="col-lg-5 ">
+                                <img class=" img-fluid card-img " src="assets/picture/slid4.jpg " alt="s1 ">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <div class="d-flex flex-column h-100 ">
+                                    <div class="card-body flex-grow-1 mb-auto pt-4 px-4 ">
+                                        <h5 class="card-title font-weight-bold mt-1 mb-2 mt-md-2 mb-md-3 ">نام محل</h5>
+                                        <p class="card-text text-justify font-weight-normal ">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                        </p>
+
+                                    </div>
+
+                                    <div class="d-md-flex card-location-box px-4 pb-4 mt-auto ">
+                                        <span class=" d-block flex-md-fill my-2 "><i class="fas fa-map-marker-alt mr-2 " style="color: #f81a43; "></i>مشهد / انتهای بلوار خیام</span>
+                                        <button class="btn my-blue-btn d-block d-md-inline-block mx-auto my-2 ">کلیک کنید</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card mb-4 overflow-hidden rounded-0 ">
+                        <div class="row g-0 ">
+                            <div class="col-lg-5 ">
+                                <img class=" img-fluid card-img " src="assets/picture/slid3.jpg " alt="s1 ">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <div class="d-flex flex-column h-100 ">
+                                    <div class="card-body flex-grow-1 mb-auto pt-4 px-4 ">
+                                        <h5 class="card-title font-weight-bold mt-1 mb-2 mt-md-2 mb-md-3 ">نام محل</h5>
+                                        <p class="card-text text-justify font-weight-normal ">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                        </p>
+
+                                    </div>
+
+                                    <div class="d-md-flex card-location-box px-4 pb-4 mt-auto ">
+                                        <span class=" d-block flex-md-fill my-2 "><i class="fas fa-map-marker-alt mr-2 " style="color: #f81a43; "></i>مشهد / انتهای بلوار خیام</span>
+                                        <button class="btn my-blue-btn d-block d-md-inline-block mx-auto my-2 ">کلیک کنید</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pagination-box d-flex justify-content-center my-5 ">
+                        <ul class="pagination pagination-circle pagination-sm ">
+                            <li class="page-item disabled "><a href="# " class="page-link bg-transparent ">صفحه قبل</a></li>
+                            <li class="page-item rounded active "><a href="# " class="page-link " style="background-color: #00b4d7; ">1</a></li>
+                            <li class="page-item "><a href="# " class="page-link ">2</a></li>
+                            <li class="page-item "><a href="# " class="page-link ">3</a></li>
+                            <li class="page-item "><a href="# " class="page-link ">صفحه بعد</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- sidebar -->
+                <div class="col-lg-3 pl-4 ">
+
+                    <h6 class="title title-dark h6 h6-responsive my-4 ">جستجو اقامتگاه از روی نقشه</h6>
+
+                    <div class="card bmj-card ">
+
+                        <div class="card-img card-img-bottom " id="mapid"></div>
+                    </div>
+
+                    <!-- display in large and swiper slide in smaller-->
+                    <div class="d-none d-lg-block ">
+
+                        <div class="bmj-sidebar-cards mt-4 ">
+
+                            <div class="card bg-white bmj-card mb-4 ">
+                                <div class="card-body p-0 ">
+
+                                    <!-- top bar -->
+                                    <div class="d-flex ">
+                                        <h6 class="card-text flex-fill my-2 ml-2 " style="font-weight: bold; font-size: x-small; color: rgb(91, 91, 91); ">گیلان/رضوان شهر/روستای پلنگ پاره</h6>
+
+                                        <span class="mr-auto ">
+                                            <h6 class="card-text d-inline-flex my-2 " style="font-weight: bold; font-size: x-small; color: rgb(91, 91, 91); ">کد اقامتگاه</h6>
+                                            <span class="badge my-badge my-2 me-1 ms-1 ">1432</span>
+                                        </span>
+                                    </div>
+
+                                    <!-- inner card -->
+                                    <div class="card text-white ">
+                                        <img src="assets/picture/slid5.jpg " class="card-img rounded-0 " alt="... " />
+
+                                        <div class="card-img-overlay card-overlay-icon ">
+                                            <fiv class="d-flex align-items-center ">
+                                                <i class="fas fa-map-marker-alt m-1 flex-fill " style="color: #f81a43; "></i>
+                                                <i class="far fa-heart m-1 "></i>
+                                                <i class="fa fa-balance-scale m-1 " aria-hidden="true "></i>
+                                        </div>
+
+                                        <div id="card-overlay " class="hide card-img-overlay card-overlay pt-1 px-1 ">
+                                            <div class="d-flex align-items-center justify-content-center mx-auto ">
+
+                                                <span class="bmj-card-overlay-detail ">
+                                                    <i class="fas fa-home mx-auto mt-1 mb-2 " ></i>
+                                                    <h6 class="mx-auto " ><span class="mr-1 ">600</span>متر مربع
+                                                </h6>
+                                                </span>
+
+                                                <span class="bmj-card-overlay-detail ">
+                                                    <i class=" fas fa-users mx-auto mt-1 mb-2 " ></i>
+                                                    <h6 class="mx-auto "><span class="mr-1 ">6</span>نفر</h6>
+                                                </span>
+                                                <span class="bmj-card-overlay-detail ">
+                                                    <i class="fas fa-door-open mx-auto mt-1 mb-2 " ></i>
+                                                    <h6 class="mx-auto "><span class="mr-1 ">4</span>اتاق</h6>
+                                                </span>
+                                                <span class="bmj-card-overlay-detail ">
+                                                    <i class="fas fa-car mx-auto mt-1 mb-2 " ></i>
+                                                    <h6 class="mx-auto "><span class="mr-1 ">3</span>پارکینگ</h6>
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center justify-content-center mx-auto ">
+
+                                            <button id="arrowBtnOverlay " class="border-0 arrowBtnOverlay py-0 " onclick="hideShowCardOverlay() ">
+                                                <i id="arrowIconOverlay " class="fas fa-chevron-up arrowIconOverlay mt-2 mb-0 " style="color: white; "></i>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- inner card ended -->
+
+                                    <!-- bottom bar -->
+                                    <div class="d-flex bmj-card-btm-bar ">
+                                        <h6 class="card-text bmj-btm-bar-title flex-fill my-3 ml-3 ">اقامتگاه بومگردی یونا</h6>
+
+                                        <span class="d-flex justify-content-center align-items-center mr-auto ">
+                                            <h6 class="card-text bmj-btm-bar-description d-inline-flex my-3 ">از<span class="mx-1 ">650,000</span>تومان</h6>
+                                        <i class="fas fa-chevron-left mx-2 " style="color: #919191; "></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bmj-sidebar-cards mt-4 ">
+
+                            <div class="card bg-white bmj-card mb-4 ">
+                                <div class="card-body p-0 ">
+
+                                    <!-- top bar -->
+                                    <div class="d-flex ">
+                                        <h6 class="card-text flex-fill my-2 ml-2 " style="font-weight: bold; font-size: x-small; color: rgb(91, 91, 91); ">گیلان/رضوان شهر/روستای پلنگ پاره</h6>
+
+                                        <span class="mr-auto ">
+                                            <h6 class="card-text d-inline-flex my-2 " style="font-weight: bold; font-size: x-small; color: rgb(91, 91, 91); ">کد اقامتگاه</h6>
+                                            <span class="badge my-badge my-2 me-1 ms-1 ">1432</span>
+                                        </span>
+                                    </div>
+
+                                    <!-- inner card -->
+                                    <div class="card text-white ">
+                                        <img src="assets/picture/slid4.jpg " class="card-img rounded-0 " alt="... " />
+
+                                        <div class="card-img-overlay card-overlay-icon ">
+                                            <fiv class="d-flex align-items-center ">
+                                                <i class="fas fa-map-marker-alt m-1 flex-fill " style="color: #f81a43; "></i>
+                                                <i class="far fa-heart m-1 "></i>
+                                                <i class="fa fa-balance-scale m-1 " aria-hidden="true "></i>
+                                        </div>
+
+                                        <div class="hide card-img-overlay pt-1 px-1 card-overlay ">
+                                            <div class="d-flex align-items-center justify-content-center mx-auto ">
+
+                                                <span class="bmj-card-overlay-detail ">
+                                                    <i class="fas fa-home mx-auto mt-1 mb-2 " ></i>
+                                                    <h6 class="mx-auto " ><span class="mr-1 ">600</span>متر مربع
+                                                </h6>
+                                                </span>
+
+                                                <span class="bmj-card-overlay-detail ">
+                                                    <i class=" fas fa-users mx-auto mt-1 mb-2 " ></i>
+                                                    <h6 class="mx-auto "><span class="mr-1 ">6</span>نفر</h6>
+                                                </span>
+                                                <span class="bmj-card-overlay-detail ">
+                                                    <i class="fas fa-door-open mx-auto mt-1 mb-2 " ></i>
+                                                    <h6 class="mx-auto "><span class="mr-1 ">4</span>اتاق</h6>
+                                                </span>
+                                                <span class="bmj-card-overlay-detail ">
+                                                    <i class="fas fa-car mx-auto mt-1 mb-2 " ></i>
+                                                    <h6 class="mx-auto "><span class="mr-1 ">3</span>پارکینگ</h6>
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center justify-content-center mx-auto ">
+
+                                            <button class="border-0 py-0 arrowBtnOverlay " onclick="hideShowCardOverlay() ">
+                                                <i class="fas fa-chevron-up mt-2 mb-0 arrowIconOverlay " style="color: white; "></i>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- inner card ended -->
+
+                                    <!-- bottom bar -->
+                                    <div class="d-flex bmj-card-btm-bar ">
+                                        <h6 class="card-text bmj-btm-bar-title flex-fill my-3 ml-3 ">اقامتگاه بومگردی یونا</h6>
+
+                                        <span class="d-flex justify-content-center align-items-center mr-auto ">
+                                            <h6 class="card-text bmj-btm-bar-description d-inline-flex my-3 ">از<span class="mx-1 ">650,000</span>تومان</h6>
+                                        <i class="fas fa-chevron-left mx-2 " style="color: #919191; "></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- sidebar ended -->
+            </div>
+
+            <div class=" d-lg-none ">
+                <!-- Slider main container -->
+                <div class="swiper-container ">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper ">
+
+                        <!-- Slides -->
+                        <div class="swiper-slide ">
+                            <div class="bmj-sidebar-cards mt-4 ">
+
+                                <div class="card bg-white bmj-card mb-4 ">
+                                    <div class="card-body p-0 ">
+
+                                        <!-- top bar -->
+                                        <div class="d-flex ">
+                                            <h6 class="card-text flex-fill my-2 ml-2 " style="font-weight: bold; font-size: x-small; color: rgb(91, 91, 91); ">گیلان/رضوان شهر/روستای پلنگ پاره</h6>
+
+                                            <span class="mr-auto ">
+                                                <h6 class="card-text d-inline-flex my-2 " style="font-weight: bold; font-size: x-small; color: rgb(91, 91, 91); ">کد اقامتگاه</h6>
+                                                <span class="badge my-badge my-2 me-1 ms-1 ">1432</span>
+                                            </span>
+                                        </div>
+
+                                        <!-- inner card -->
+                                        <div class="card text-white ">
+                                            <img src="assets/picture/slid5.jpg " class="card-img rounded-0 " alt="... " />
+
+                                            <div class="card-img-overlay card-overlay-icon ">
+                                                <fiv class="d-flex align-items-center ">
+                                                    <i class="fas fa-map-marker-alt m-1 flex-fill " style="color: #f81a43; "></i>
+                                                    <i class="far fa-heart m-1 "></i>
+                                                    <i class="fa fa-balance-scale m-1 " aria-hidden="true "></i>
+                                            </div>
+
+                                            <div class="hide card-img-overlay pt-1 px-1 card-overlay ">
+                                                <div class="d-flex align-items-center justify-content-center mx-auto ">
+
+                                                    <span class="bmj-card-overlay-detail ">
+                                                        <i class="fas fa-home mx-auto mt-1 mb-2 " ></i>
+                                                        <h6 class="mx-auto " ><span class="mr-1 ">600</span>متر مربع
+                                                    </h6>
+                                                    </span>
+
+                                                    <span class="bmj-card-overlay-detail ">
+                                                        <i class=" fas fa-users mx-auto mt-1 mb-2 " ></i>
+                                                        <h6 class="mx-auto "><span class="mr-1 ">6</span>نفر</h6>
+                                                    </span>
+                                                    <span class="bmj-card-overlay-detail ">
+                                                        <i class="fas fa-door-open mx-auto mt-1 mb-2 " ></i>
+                                                        <h6 class="mx-auto "><span class="mr-1 ">4</span>اتاق</h6>
+                                                    </span>
+                                                    <span class="bmj-card-overlay-detail ">
+                                                        <i class="fas fa-car mx-auto mt-1 mb-2 " ></i>
+                                                        <h6 class="mx-auto "><span class="mr-1 ">3</span>پارکینگ</h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="d-flex align-items-center justify-content-center mx-auto ">
+
+                                                <button class="border-0 py-0 arrowBtnOverlay " onclick="hideShowCardOverlay() ">
+                                                    <i class="fas fa-chevron-up mt-2 mb-0 arrowIconOverlay " style="color: white; "></i>
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- inner card ended -->
+
+                                        <!-- bottom bar -->
+                                        <div class="d-flex bmj-card-btm-bar ">
+                                            <h6 class="card-text bmj-btm-bar-title flex-fill my-3 ml-3 ">اقامتگاه بومگردی یونا</h6>
+
+                                            <span class="d-flex justify-content-center align-items-center mr-auto ">
+                                                <h6 class="card-text bmj-btm-bar-description d-inline-flex my-3 ">از<span class="mx-1 ">650,000</span>تومان</h6>
+                                            <i class="fas fa-chevron-left mx-2 " style="color: #919191; "></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+
+                            <div class="bmj-sidebar-cards mt-4 ">
+
+                                <div class="card bg-white bmj-card mb-4 ">
+                                    <div class="card-body p-0 ">
+
+                                        <!-- top bar -->
+                                        <div class="d-flex ">
+                                            <h6 class="card-text flex-fill my-2 ml-2 " style="font-weight: bold; font-size: x-small; color: rgb(91, 91, 91); ">گیلان/رضوان شهر/روستای پلنگ پاره</h6>
+
+                                            <span class="mr-auto ">
+                                                <h6 class="card-text d-inline-flex my-2 " style="font-weight: bold; font-size: x-small; color: rgb(91, 91, 91); ">کد اقامتگاه</h6>
+                                                <span class="badge my-badge my-2 me-1 ms-1 ">1432</span>
+                                            </span>
+                                        </div>
+
+                                        <!-- inner card -->
+                                        <div class="card text-white ">
+                                            <img src="assets/picture/slid4.jpg " class="card-img rounded-0 " alt="... " />
+
+                                            <div class="card-img-overlay card-overlay-icon ">
+                                                <fiv class="d-flex align-items-center ">
+                                                    <i class="fas fa-map-marker-alt m-1 flex-fill " style="color: #f81a43; "></i>
+                                                    <i class="far fa-heart m-1 "></i>
+                                                    <i class="fa fa-balance-scale m-1 " aria-hidden="true "></i>
+                                            </div>
+
+                                            <div class="hide card-img-overlay pt-1 px-1 card-overlay ">
+                                                <div class="d-flex align-items-center justify-content-center mx-auto ">
+
+                                                    <span class="bmj-card-overlay-detail ">
+                                                        <i class="fas fa-home mx-auto mt-1 mb-2 " ></i>
+                                                        <h6 class="mx-auto " ><span class="mr-1 ">600</span>متر مربع
+                                                    </h6>
+                                                    </span>
+
+                                                    <span class="bmj-card-overlay-detail ">
+                                                        <i class=" fas fa-users mx-auto mt-1 mb-2 " ></i>
+                                                        <h6 class="mx-auto "><span class="mr-1 ">6</span>نفر</h6>
+                                                    </span>
+                                                    <span class="bmj-card-overlay-detail ">
+                                                        <i class="fas fa-door-open mx-auto mt-1 mb-2 " ></i>
+                                                        <h6 class="mx-auto "><span class="mr-1 ">4</span>اتاق</h6>
+                                                    </span>
+                                                    <span class="bmj-card-overlay-detail ">
+                                                        <i class="fas fa-car mx-auto mt-1 mb-2 " ></i>
+                                                        <h6 class="mx-auto "><span class="mr-1 ">3</span>پارکینگ</h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="d-flex align-items-center justify-content-center mx-auto ">
+
+                                                <button class="border-0 py-0 arrowBtnOverlay " onclick="hideShowCardOverlay() ">
+                                                    <i class="fas fa-chevron-up mt-2 mb-0 arrowIconOverlay " style="color: white; "></i>
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- inner card ended -->
+
+                                        <!-- bottom bar -->
+                                        <div class="d-flex bmj-card-btm-bar ">
+                                            <h6 class="card-text bmj-btm-bar-title flex-fill my-3 ml-3 ">اقامتگاه بومگردی یونا</h6>
+
+                                            <span class="d-flex justify-content-center align-items-center mr-auto ">
+                                                <h6 class="card-text bmj-btm-bar-description d-inline-flex my-3 ">از<span class="mx-1 ">650,000</span>تومان</h6>
+                                            <i class="fas fa-chevron-left mx-2 " style="color: #919191; "></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev "></div>
+                    <div class="swiper-button-next "></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- main ended -->
+
+    </div>
+
+    <footer>
+        <div class="container-fluid my-footer bg-white mt-5 px-0 ">
+            <div class="container h-100 pt-4 ">
+
+                <div class="d-flex flex-row h-100 flex-wrap justify-content-center ">
+
+                    <div class="col-lg-5 ">
+
+                        <div class="d-flex flex-column h-100 pb-4 ">
+                            <div class="flex-fill px-3 mb-3 ">
+                                <div class="d-flex flex-row flex-wrap ">
+
+                                    <!-- contacts address -->
+                                    <div class=" col-md-6 col-lg-12 order-lg-0 order-1 pt-3 ">
+                                        <span class="d-block text-center font-weight-bold mb-2 " style="font-size:small; "><i class="fas fa-map-marker-alt mr-2 " style="color: gray; "></i><span class=" mr-2 ">آدرس :</span> مشهد - نبش هاشمیه 24 - ساختمان
+                                        188
+                                        </span>
+                                        <span class="d-block text-center font-weight-bold mb-2 " style="font-size:small; "><i class="fas fa-phone mr-2 " style="color: gray; "></i><span class=" mr-2 ">شماره تماس :</span> 05138787878 - 05138787878</span>
+                                    </div>
+
+                                    <!-- logo , social , webapp box -->
+                                    <div class=" col-md-6 col-lg-12 order-lg-1 order-0 ">
+                                        <div class="d-flex flex-row flex-wrap align-items-end mt-2 ">
+
+                                            <!-- social networks -->
+                                            <div class="col-12 order-1 order-lg-0 my-1 ">
+                                                <div class="d-flex justify-content-center ">
+
+                                                    <a href=" "><img class="icon-medium " src="assets/img/svg/whatsapp-icon.svg " alt="whatsapp "></a>
+                                                    <a href=" "><img class="icon-medium " src="assets/img/svg/linkedin-icon.svg " alt="linkedin "></a>
+                                                    <a href=" "><img class="icon-medium " src="assets/img/svg/instagram-icon.svg " alt="instagram "></a>
+                                                    <a href=" "><img class="icon-medium " src="assets/img/svg/telegram-icon.svg " alt="telegram "></a>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- logo -->
+                                            <div class="col-12 col-lg-5 offset-lg-1 px-0 order-0 order-lg-1 my-1 ">
+                                                <div class="d-flex justify-content-center ">
+                                                    <a href=" ">
+                                                        <img class="icon-large " src="assets/img/svg/bamajoore-main-logo.svg " alt="whatsapp ">
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- webapp -->
+                                            <div class="col-12 col-lg-5 offset-lg-1 px-0 pb-lg-3 order-2 order-lg-2 my-2 ">
+                                                <div class="d-flex justify-content-center ">
+                                                    <a class="btn my-webapp-btn d-inline-block ">
+                                                         نصب نرم افزار 
+                                                         <span><img class="icon-small " src="assets/img/logo.png " alt="web application " ></span>
+                                                     </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-7 px-3 ">
+
+                        <div class="d-flex flex-column h-100 pb-4 px-lg-4 ">
+
+                            <!-- email box -->
+                            <div class="row ">
+                                <div class="offset-lg-3 col-lg-9 flex-fill ">
+                                    <form class="md-form md-outline ">
+                                        <label for="contact-email " style="font-size: small; ">ایمیل خود را وارد کنید</label>
+                                        <input type="email " class="form-control mb-3 " id="contact-email ">
+
+                                        <label for="contact-msg " style="font-size: small; ">متن خود را وارد نمایید</label>
+                                        <textarea class="form-control mb-3 " rows="3 " id="contact-msg "></textarea>
+
+                                        <button class="btn btn-info font-weight-bold d-block mx-auto float-md-left mb-4 " type="submit ">ارسال</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-row h-100 flex-wrap justify-content-center ">
+                    <div class="col-lg-5 ">
+
+                        <div class="d-flex flex-column h-100 pb-4 px-lg-4 ">
+                            <!-- links -->
+                            <div class=" d-flex mt-auto ">
+                                <div class="col-lg-6 px-0 ">
+
+                                    <p class="text-center mb-2 " style="font-size: medium ">
+                                        <a href=" " class=" text-decoration-none " style="color: #4f4f4f; ">قوانین و مقررات</a>
+                                    </p>
+
+                                    <p class="text-center mb-2 " style="font-size: medium ">
+                                        <a href=" " class=" text-decoration-none " style="color: #4f4f4f; ">سوالات متداول</a>
+                                    </p>
+
+                                    <p class="text-center mb-2 " style="font-size: medium ">
+                                        <a href=" " class=" text-decoration-none " style="color: #4f4f4f; ">ثبت رایگان اقامتگاه</a>
+                                    </p>
+
+                                </div>
+                                <div class="col-lg-5 offset-lg-1 px-0 ">
+
+                                    <p class="text-center mb-2 " style="font-size: medium ">
+                                        <a href=" " class=" text-decoration-none " style="color: #4f4f4f; ">درباره ما</a>
+                                    </p>
+
+                                    <p class="text-center mb-2 " style="font-size: medium ">
+                                        <a href=" " class=" text-decoration-none " style="color: #4f4f4f; ">ارتباط با ما</a>
+                                    </p>
+
+                                    <p class="text-center mb-2 " style="font-size: medium ">
+                                        <a href=" " class=" text-decoration-none " style="color: #4f4f4f; ">جاذبه ها</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-7 px-3 ">
+
+                        <div class="d-flex flex-column h-100 pb-4 px-lg-4 ">
+                            <!-- hashtags -->
+                            <div class="row mt-auto ">
+                                <div class="col-sm-6 col-md-3 p-2 ">
+                                    <button class="btn my-hashtag-btn w-100 ">هشتگ ها</button>
+                                </div>
+                                <div class="col-sm-6 col-md-3 p-2 ">
+                                    <button class="btn my-hashtag-btn w-100 ">هشتگ ها</button>
+                                </div>
+                                <div class="col-sm-6 col-md-3 p-2 ">
+                                    <button class="btn my-hashtag-btn w-100 ">هشتگ ها</button>
+                                </div>
+                                <div class="col-sm-6 col-md-3 p-2 ">
+                                    <button class="btn my-hashtag-btn w-100 ">هشتگ ها</button>
+                                </div>
+                                <div class="col-sm-6 col-md-3 p-2 ">
+                                    <button class="btn my-hashtag-btn w-100 ">هشتگ ها</button>
+                                </div>
+                                <div class="col-sm-6 col-md-3 p-2 ">
+                                    <button class="btn my-hashtag-btn w-100 ">هشتگ ها</button>
+                                </div>
+                                <div class="col-sm-6 col-md-3 p-2 ">
+                                    <button class="btn my-hashtag-btn w-100 ">هشتگ ها</button>
+                                </div>
+                                <div class="col-sm-6 col-md-3 p-2 ">
+                                    <button class="btn my-hashtag-btn w-100 ">هشتگ ها</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container d-flex justify-content-center align-items-center mt-1 ">
+            <p class="text-muted font-weight-bold ">تمام حقوق وب سایت و محتوای آن نزد باماجوره محفوظ بوده و هرگونه کپی برداری بدون اجازه ی مالک پیگرد قانونی خواهد داشت</p>
+        </div>
+    </footer>
+
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src="assets/js/swiper.initialize.js "></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js " integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=" "></script>
+
+    <!-- my js -->
+    <script src="assets/js/my.script.js "></script>
+    <script src="assets/js/index.js "></script>
+    <script src="assets/js/map.leaflet.js "></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then MDB -->
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/popper.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/mdb.min.js "></script>
+</body>
+
+</html>
